@@ -100,3 +100,40 @@ body {
     width: 240px;
     padding: 1em
 }
+
+#about-us-title {
+    margin-top: 4em;
+}
+
+#section-flex {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-gap: 4em;
+}
+
+#section-flex img {
+    padding-top: 5em;
+    height: 250px;
+    width: 450px;
+}
+
+#about-us-text {
+    padding-top: 4em;
+}
+
+#about-us-text h3{
+    padding-bottom: 2em;
+}
+
+#about-us-text ul{
+    padding-left: 2em;
+    padding-bottom: 5em;
+}
+
+#about-us-text p{
+    padding-bottom: 2em;
+}
+
+footer h3 {
+    text-align: center;
+}
