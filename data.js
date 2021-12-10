@@ -1,4 +1,4 @@
-export const data = [
+const data = [
     {
         id: 0,
         title: "Black Shirt",
@@ -56,3 +56,5 @@ export const data = [
         img: "images/yellow-jacket.jpg"
     }
 ]
+
+export default data;
