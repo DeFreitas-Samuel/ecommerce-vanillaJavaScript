@@ -5,7 +5,7 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #navbar {
@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   padding-left: 1em;
   align-items: center;
+  height: 6em;
 }
 
 #Company-name {
@@ -42,7 +43,7 @@ body {
   font-size: 1.2em;
   text-decoration: none;
   cursor: pointer;
-  padding: 1em;
+  padding: 1.7em;
 }
 
 .navbar-link:hover {
@@ -66,19 +67,29 @@ body {
 }
 
 #news-text {
-  height: 70vw;
+  height: 50vw;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-#news-text h2 {
+#news-text h4 {
     color: #1a0066;
+    font-size: 2em;
 }
 
-#news-text p {
+#news-text h2 {
     margin-top: 1em;
     font-size: 3em;
     color: white;
+}
+
+#product-section {
+    margin: 5em 7em;
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
