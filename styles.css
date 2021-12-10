@@ -92,4 +92,11 @@ body {
 #product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.product img{
+    height: 240px;
+    width: 240px;
+    padding: 1em
 }
