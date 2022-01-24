@@ -5,7 +5,7 @@ const data = [
         price: "18.99$",
         category: "shirt",
         img: "images/black-shirt.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ const data = [
         price: "25$",
         category: "shirt",
         img: "images/red-shirt.jpg",
-        description: "Red Shirt ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Red Shirt ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const data = [
         price: "28.99$",
         category: "pants",
         img: "images/black-pants.jpg",
-        description: "Black Pants dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Black Pants dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const data = [
         price: "38.00$",
         category: "pants",
         img: "images/blue-jeans.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const data = [
         price: "78.50$",
         category: "dress",
         img: "images/pink-dress.jpg",
-        description: "Pink Dress dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Pink Dress dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const data = [
         price: "68.99$",
         category: "dress",
         img: "images/red-dress.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ const data = [
         price: "45.99$",
         category: "jacket",
         img: "images/navy-jacket.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         id: 7,
@@ -61,7 +61,7 @@ const data = [
         price: "79.99$",
         category: "jacket",
         img: "images/yellow-jacket.jpg",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur reiciendis pariatur adipisci repellat vel, vitae sunt blanditiis voluptatum quae!"
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
 ]
 
