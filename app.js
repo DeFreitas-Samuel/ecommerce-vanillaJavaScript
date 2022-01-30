@@ -1,7 +1,6 @@
 import data from "./data.js"
 
 const productGrid = document.querySelector("#product-grid");
-console.log(productGrid)
 data.forEach(item => {
     const article = document.createElement('article');
     article.classList.add("product")
@@ -10,14 +9,56 @@ data.forEach(item => {
                             <h4 id="product-title">${item.title}</h4>
                             <h4>${item.price}</h4>
                             <p>${item.description}</p>
-                            <div class="star-rating-product-info">
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
-                                <button></button>
+                            <div class="star-rating-product-info rating-0">
+                                <button class="1star"></button>
+                                <button class="2star"></button>
+                                <button class="3star"></button>
+                                <button class="4star"></button>
+                                <button class="5star"></button>
                             </div>
                             <p style="color:red;" >Reviews(${ Math.floor( Math.random() * (50 - 10) + 10)})</p>
                         </div>`
     productGrid.appendChild(article)
 })
+
+const starRatingButtons = document.querySelectorAll(".star-rating-product-info button");
+starRatingButtons.forEach(item => item.addEventListener("mouseover", changeRating));
+
+function changeRating(event){
+    let currentDiv = event.currentTarget.parentNode;
+    let starClassName = Array.from(event.currentTarget.classList)[0]
+    console.log(starClassName)
+    switch (starClassName) {
+        case '1star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-1');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+        case '2star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-2');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+        case '3star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-3');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+        case '4star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-4');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+        case '5star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-5');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+        default:
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-0');
+            currentDiv.classList.add('star-rating-product-info');
+            break;
+    }
+
+}

@@ -203,13 +203,8 @@ footer h3 {
 /* stars rating*/
 
 .star-rating-product-info{
-  background-image: url('images/rate-0.png');
-  background-repeat: no-repeat;
-  z-index: 1;
   width: 9em;
   height: 2rem;
-  display: inline-block;
-  
 }
 
 .star-rating-product-info button{
@@ -218,7 +213,37 @@ footer h3 {
   background-color: #FFFFFF00;
   border: none;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 4px;
+}
+
+.rating-0 {
+  background-image: url('images/rate-0.png');
+  background-repeat: no-repeat;
+}
+
+.rating-1 {
+  background-image: url('images/rate-1.png');
+  background-repeat: no-repeat;
+}
+
+.rating-2 {
+  background-image: url('images/rate-2.png');
+  background-repeat: no-repeat;
+}
+
+.rating-3 {
+  background-image: url('images/rate-3.png');
+  background-repeat: no-repeat;
+}
+
+.rating-4 {
+  background-image: url('images/rate-4.png');
+  background-repeat: no-repeat;
+}
+
+.rating-5 {
+  background-image: url('images/rate-5.png');
+  background-repeat: no-repeat;
 }
 
 
