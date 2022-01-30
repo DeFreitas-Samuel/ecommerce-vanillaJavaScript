@@ -205,6 +205,7 @@ footer h3 {
 .star-rating-product-info{
   width: 9em;
   height: 2rem;
+  cursor: pointer;
 }
 
 .star-rating-product-info button{
@@ -214,6 +215,7 @@ footer h3 {
   border: none;
   display: inline-block;
   margin-right: 4px;
+  cursor: pointer;
 }
 
 .rating-0 {
