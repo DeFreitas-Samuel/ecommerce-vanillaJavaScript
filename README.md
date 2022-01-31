@@ -33,3 +33,9 @@ This website was made with just HTML, CSS and vanilla javascript without the use
 5. Copy the link <http://localhost:xxxx> that appeared in your terminal(the x's could be any number) in your browser and follow it. It should show the website ecommerce-vanillaJavaScript.
 
 ## Screenshots
+
+![Screenshot 2022-01-30 204445](https://user-images.githubusercontent.com/52897285/151725130-27d4d14f-8a31-4d2c-9828-0b82d2dc4d9e.jpg)
+
+![Screenshot 2022-01-30 204519](https://user-images.githubusercontent.com/52897285/151725127-b840fe12-4896-49ba-8e12-4b6e71ab70cb.jpg)
+
+![Screenshot 2022-01-30 204549](https://user-images.githubusercontent.com/52897285/151725128-cbc8229c-ff9f-41fd-a58c-6781ee38236e.jpg)
