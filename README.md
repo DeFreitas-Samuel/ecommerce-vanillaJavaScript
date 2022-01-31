@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a static website made for a fictional web shop. The website shows a simple navbar with the logo of the ecommerce; an image with an announcement of flashsales; a section that shows a portion of the available products that the store has to offer, with a rating included (this is only comestic it doesn't store this data anywhere); a about us section that; and a simple footer that shows some info about the website.
+This is a static website made for a fictional web shop. The website shows a simple navbar with the logo of the ecommerce; an image with an announcement of flashsales; a section that shows a portion of the available products that the store has to offer, with a rating functionality included (this is only cosmetic it doesn't store this data anywhere); an about us section; and a simple footer that shows some info about the website.
 
 This website was made with just HTML, CSS and vanilla javascript without the use of any other library, for the purporse of showcasing my skill with the 3 basic technologies that every front-end developer should know.
 
