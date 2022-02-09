@@ -22,12 +22,13 @@ data.forEach(item => {
 })
 
 const starRatingButtons = document.querySelectorAll(".star-rating-product-info button");
+const starRating = document.querySelectorAll(".star-rating-product-info");
 starRatingButtons.forEach(item => item.addEventListener("mouseover", changeRating));
+starRating.forEach(item => item.addEventListener("mouseleave", restoreRating));
 
 function changeRating(event){
     let currentDiv = event.currentTarget.parentNode;
     let starClassName = Array.from(event.currentTarget.classList)[0]
-    console.log(starClassName)
     switch (starClassName) {
         case '1star':
             currentDiv.className = ''
@@ -61,4 +62,11 @@ function changeRating(event){
             break;
     }
 
+}
+
+function restoreRating(event){
+    let currentDiv = event.currentTarget;
+    currentDiv.className = ''
+    currentDiv.classList.add('rating-0');
+    currentDiv.classList.add('star-rating-product-info');
 }
