@@ -9,7 +9,7 @@ data.forEach(item => {
                             <h4 id="product-title">${item.title}</h4>
                             <h4>${item.price}</h4>
                             <p>${item.description}</p>
-                            <div class="star-rating-product-info rating-0">
+                            <div class="star-rating-product-info rating-0 star0">
                                 <button class="1star"></button>
                                 <button class="2star"></button>
                                 <button class="3star"></button>
@@ -21,52 +21,141 @@ data.forEach(item => {
     productGrid.appendChild(article)
 })
 
+
 const starRatingButtons = document.querySelectorAll(".star-rating-product-info button");
 const starRating = document.querySelectorAll(".star-rating-product-info");
-starRatingButtons.forEach(item => item.addEventListener("mouseover", changeRating));
-starRating.forEach(item => item.addEventListener("mouseleave", restoreRating));
+starRatingButtons.forEach(item => item.addEventListener("mouseover", hoverRatingHandler));
+starRating.forEach(item => item.addEventListener("mouseleave", dehoverRatingHandler));
+starRatingButtons.forEach(item => item.addEventListener("click", setRating));
 
-function changeRating(event){
+// @Desc This function handles the hovering aspect of the 5 star rating component
+function hoverRatingHandler(event){
     let currentDiv = event.currentTarget.parentNode;
-    let starClassName = Array.from(event.currentTarget.classList)[0]
-    switch (starClassName) {
+    
+    let starButtonClassName = Array.from(event.currentTarget.classList)[0]
+    let currentFixedRating = event.currentTarget.parentNode.classList[2];
+    switch (starButtonClassName) {
         case '1star':
             currentDiv.className = ''
             currentDiv.classList.add('rating-1');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
         case '2star':
             currentDiv.className = ''
             currentDiv.classList.add('rating-2');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
         case '3star':
             currentDiv.className = ''
             currentDiv.classList.add('rating-3');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
         case '4star':
             currentDiv.className = ''
             currentDiv.classList.add('rating-4');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
         case '5star':
             currentDiv.className = ''
             currentDiv.classList.add('rating-5');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
         default:
             currentDiv.className = ''
             currentDiv.classList.add('rating-0');
             currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add(currentFixedRating);
             break;
     }
 
 }
 
-function restoreRating(event){
+// @Desc This function handles what happen when you dehover the 5 star rating component
+function dehoverRatingHandler(event){
     let currentDiv = event.currentTarget;
-    currentDiv.className = ''
-    currentDiv.classList.add('rating-0');
-    currentDiv.classList.add('star-rating-product-info');
+    let clickedRating = currentDiv.classList[2]
+
+    switch (clickedRating) {
+        case 'star1':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-1');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star1');
+            break;
+        case 'star2':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-2');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star2');
+            break;
+        case 'star3':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-3');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star3');
+            break;
+        case 'star4':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-4');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star4');
+            break;
+        case 'star5':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-5');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star5');
+            break;
+        default:
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-0');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star0');
+            break;
+    }
+}
+
+// @Desc This function sets a fixed rating once the user clicks one of the five stars of the product
+function setRating(event){
+    let currentDiv = event.currentTarget.parentNode;
+    let starButtonClassName = Array.from(event.currentTarget.classList)[0];
+
+    switch (starButtonClassName) {
+        case '1star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-1');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star1');
+            break;
+        case '2star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-2');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star2');
+            break;
+        case '3star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-3');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star3');
+            break;
+        case '4star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-4');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star4');
+            break;
+        case '5star':
+            currentDiv.className = ''
+            currentDiv.classList.add('rating-5');
+            currentDiv.classList.add('star-rating-product-info');
+            currentDiv.classList.add('star5');
+            break;
+
+    }
 }
